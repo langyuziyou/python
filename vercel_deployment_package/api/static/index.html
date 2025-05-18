@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI健康平台 - 欢迎页面</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .feature {
+            flex: 1 1 200px;
+            padding: 1.5rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        .feature h3 {
+            color: #3498db;
+            margin-top: 0;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-top: 1rem;
+        }
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
+        .status {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #e8f4fd;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI健康平台</h1>
+        <p>您的个人健康管理智能助手，随时随地关注您的健康状况</p>
+        
+        <div class="status">
+            ✅ 服务状态：在线运行中
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>健康数据分析</h3>
+                <p>智能分析您的健康数据，提供个性化的健康建议</p>
+            </div>
+            <div class="feature">
+                <h3>AI健康助手</h3>
+                <p>24小时在线的AI助手，解答您的健康问题</p>
+            </div>
+            <div class="feature">
+                <h3>设备集成</h3>
+                <p>支持多种可穿戴设备，实时同步健康数据</p>
+            </div>
+        </div>
+        
+        <a href="/api/health-check" class="cta-button">检查API状态</a>
+        
+        <div class="footer">
+            <p>© 2025 AI健康平台 | 版本 1.0.0</p>
+        </div>
+    </div>
+</body>
+</html>
