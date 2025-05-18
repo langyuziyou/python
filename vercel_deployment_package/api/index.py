@@ -1,14 +1,14 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, send_from_directory
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return jsonify({
-        "status": "success",
-        "message": "AI健康平台API服务已成功部署",
-        "version": "1.0.0"
-    })
+    return send_from_directory('static', 'index.html')
+
+@app.route('/index')
+def index():
+    return send_from_directory('static', 'index.html')
 
 @app.route('/api/health-check')
 def health_check():
